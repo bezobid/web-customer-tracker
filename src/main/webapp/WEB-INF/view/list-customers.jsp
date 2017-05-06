@@ -1,4 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <!DOCTYPE html>
 
@@ -33,6 +34,13 @@
 				   onclick="window.location.href='showFormForAdd'; return false;"
 				   class="add-button"
 			/>
+			
+			<!--  add a search box -->
+            <form:form action="search" method="POST">
+
+                <input type="submit" value="Search customer" class="add-button" />
+                <input type="text" name="theSearchName" />
+            </form:form>
 		
 			<!--  add html table here -->
 		
